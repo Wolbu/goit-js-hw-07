@@ -29,10 +29,10 @@ const instance = basicLightbox.create(
     <img src="" width="800" height="600">
 `, {
         onShow: () => {
-            document.addEventListener('keydown', onEscButtonClick);
+            window.addEventListener('keydown', onEscButtonClick);
         },
         onClose: () => {
-            document.removeEventListener('keydown', onEscButtonClick);
+            window.removeEventListener('keydown', onEscButtonClick);
         },
     },
 );
